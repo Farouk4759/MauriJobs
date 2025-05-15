@@ -1,7 +1,7 @@
 let jobs = [];
 
 // Load job data from jobs.json
-fetch('data/jobs.json')
+fetch('jobs.json')
   .then(response => response.json())
   .then(data => {
     jobs = data;
