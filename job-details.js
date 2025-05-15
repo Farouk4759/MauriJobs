@@ -3,7 +3,7 @@ const params = new URLSearchParams(window.location.search);
 const jobId = parseInt(params.get("id"));
 
 // Load jobs and display the selected one
-fetch('data/jobs.json')
+fetch('jobs.json')
   .then(res => res.json())
   .then(data => {
     const job = data[jobId];
